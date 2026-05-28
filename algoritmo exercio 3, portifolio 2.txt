@@ -1,0 +1,28 @@
+algoritmo "Senha"
+
+var
+   senhacorreta, senhadigitada : caractere
+
+inicio
+   senhacorreta <- "manusenha"
+
+   escreval("-sistema de login-")
+   escreva("digite a senha: ")
+   leia(senhadigitada)
+
+   escreval()
+   escreval("------------------------")
+
+
+   enquanto senhadigitada <> senhacorreta faca
+      escreval("Erro: senha incorreta.")
+      escreval("-------------------")
+      escreva("digite a senha: ")
+      leia(senhadigitada)
+      
+   fimenquanto
+
+   escreval("---------------------------")
+   escreval("acesso liberado.")
+
+fimalgoritmo
