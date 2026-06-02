@@ -1,0 +1,25 @@
+
+algoritmo "TabuadaComPara"
+
+var
+   numero, i, resultado : inteiro
+
+inicio
+   escreva("Digite um número inteiro positivo: ")
+   leia(numero)
+
+   
+   se numero <= 0 entao
+      escreval("Por favor, digite um número maior que zero.")
+   senao
+      escreval("")
+      escreval("--- Tabuada do ", numero, " ---")
+      
+
+      para i de 1 ate 10 
+         resultado <- numero * i
+         escreval(numero, " x ", i, " = ", resultado)
+         
+   fimse
+
+fimalgoritmo
